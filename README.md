@@ -17,3 +17,11 @@ These are some functions that I use very frequently in my projects. There are th
 devtools::install_github("harshvardhaniimi/garlic")
 library(garlic)
 ````
+
+## Vignettes
+
+- [Exploratory Functions](https://harshvardhaniimi.github.io/garlic/articles/Exploratory_Functions.html)
+
+- [Manipulative Functions](https://harshvardhaniimi.github.io/garlic/articles/Manipulative_Functions.html)
+
+- [ggplot2 Theme](https://harshvardhaniimi.github.io/garlic/articles/GG-Serif_Theme.html)
