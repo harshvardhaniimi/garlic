@@ -2,7 +2,9 @@
 
 export(ggserif)
 export(na_rm_feature)
+export(na_to_zero)
 export(show_in_excel)
+export(which_na)
 export(which_this)
 importFrom(dplyr,"%>%")
 importFrom(dplyr,"filter")

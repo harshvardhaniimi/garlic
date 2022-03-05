@@ -16,6 +16,8 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(garlic)
+library(ggplot2)
+library(dplyr)
 ```
 
 This theme upgrades basic `ggplot2` themes. It is particularly suitable for academic publications that require serif fonts for labels and arrowed axes.

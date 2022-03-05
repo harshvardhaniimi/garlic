@@ -1,4 +1,4 @@
-#' @title ggserif()
+#' @title Personal `ggplot2` theme with serif fonts and directed axes
 #'
 #' @description This is a ggplot() theme with serif fonts and directed arrows.
 #'

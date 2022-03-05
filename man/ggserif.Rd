@@ -2,7 +2,7 @@
 % Please edit documentation in R/ggserif.R
 \name{ggserif}
 \alias{ggserif}
-\title{ggserif()}
+\title{Personal `ggplot2` theme with serif fonts and directed axes}
 \usage{
 ggserif(base_size = 14)
 }

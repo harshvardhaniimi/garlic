@@ -7,8 +7,7 @@
 #' @return y Manipulated vector
 #' @examples
 #' iris$Sepal.Width[2] = NA
-#' na_to_zero(iris$Sepal.Width) %>%
-#'     head()
+#' na_to_zero(iris$Sepal.Width)
 #' @export
 #' @importFrom dplyr "%>%"
 

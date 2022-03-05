@@ -1,7 +1,8 @@
-#' @title show_in_excel()
+#' @title Open a data frame in MS Excel
 #'
 #' @description This function takes in a data frame as argument and shows it in Microsoft Excel
-#' or any other spreadsheet program like OpenOffice.org. It can also be used with pipes.
+#' or any other spreadsheet program like OpenOffice.org. It can also be used with pipes. I found it
+#' on Twitter but forgot who tweeted it. If you know, let me know so that I can cite them.
 #'
 #' @param .data Data frame to show
 #' @return The function doesn't return any value (NULL).
