@@ -1,0 +1,20 @@
+#' @title show_in_excel()
+#'
+#' @description This function takes in a data frame as argument and shows it in Microsoft Excel
+#' or any other spreadsheet program like OpenOffice.org. It can also be used with pipes.
+#'
+#' @param .data Data frame to show
+#' @return The function doesn't return any value (NULL).
+#' @examples
+#' show_in_excel(iris)
+#' @export
+#' @importFrom dplyr "%>%"
+
+
+# Show in Excel Function
+show_in_excel = function(.data)
+{
+   temp = paste0(tempfile(), ".csv")
+   utils::write.csv(.data, temp)
+   fs::file_show(path = temp)
+}
