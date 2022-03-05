@@ -1,4 +1,4 @@
-#' @title na_to_zero()
+#' @title Convert missing values to zero
 #'
 #' @description This function converts missing values in a vector to zero.
 #'
@@ -11,3 +11,9 @@
 #'     head()
 #' @export
 #' @importFrom dplyr "%>%"
+
+na_to_zero = function(x)
+{
+   x = ifelse(is.na(x), 0, x)
+   return(x)
+}
