@@ -1,5 +1,4 @@
-# garlic
-### Some R Functions I Use Rather Frequently
+# garlic: Some R Functions I Use Rather Frequently
 
 <!-- badges: start -->
 [![Project Status: Active – The project has reached a stable, usable
