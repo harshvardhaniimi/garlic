@@ -1,0 +1,55 @@
+---
+title: "Manipulative_Functions"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Manipulative_Functions}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(garlic)
+```
+
+## Removing Rows Based on Missing Values in a Column
+
+Sometimes, I do not want to `na.omit()` because it will treat all features equally. I want to check values only for one column, while removing those observations.
+
+```{r}
+# First ten rows of iris dataset
+df = iris[1:10,]
+df
+
+# Setting second sepal width to NA
+df$Sepal.Width[2] = NA
+df
+
+# Removing that observation
+df = na_rm_feature(df, "Sepal.Width")
+df
+```
+
+## Changing Missing Values to Zero
+
+This function converts missing values to zero.
+
+```{r}
+# First ten rows of iris dataset
+df = iris[1:10,]
+df
+
+# Setting second sepal width to NA
+df$Sepal.Width[2] = NA
+df
+```
+
+```{r}
+na_to_zero(df$Sepal.Width)
+```

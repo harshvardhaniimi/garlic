@@ -1,0 +1,48 @@
+---
+title: "GG-Serif_Theme"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{GG-Serif_Theme}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(garlic)
+```
+
+This theme upgrades basic `ggplot2` themes. It is particularly suitable for academic publications that require serif fonts for labels and arrowed axes.
+
+## Default `ggplot2` theme
+
+```{r}
+iris %>% 
+  ggplot(aes(x = Sepal.Length, y = Sepal.Width, colour = Species)) +
+  geom_point() +
+  labs(title = "Without my theme")
+```
+
+## With my theme
+
+```{r}
+iris %>% 
+   ggplot(aes(x = Sepal.Length, y = Sepal.Width, colour = Species)) +
+   geom_point() +
+   labs(title = "With my theme") +
+   ggserif()
+```
+
+# Setting theme globally
+
+You can set theme globally for all plots using the following command.
+
+```{r}
+theme_set(ggserif())
+```

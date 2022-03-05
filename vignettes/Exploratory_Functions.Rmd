@@ -1,0 +1,63 @@
+---
+title: "Exploratory_Functions"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Exploratory_Functions}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+This vignette demonstrates how exploratory functions like `show_in_excel()`, `which_na()` and `which_this()` can be used.
+
+```{r setup}
+library(garlic)
+```
+
+# Examples
+
+```{r}
+df = iris
+```
+
+### Show a data frame in MS Excel
+
+```{r}
+show_in_excel(df)
+```
+
+It can also be used with pipes.
+
+```{r}
+library(dplyr)
+df %>% 
+   show_in_excel()
+```
+
+### Which values are missing?
+
+I'm initialising a vector from 1 to 10 with fifth value as missing `NA`.
+
+```{r}
+x = c(1:4, NA, 6:10)
+```
+
+Using `which_na()`, I can find index of element in the vector which is `NA`.
+
+```{r}
+which_na(x)
+```
+
+### Which element is this?
+
+It can identify values that satisfy a criteria. It is kind of a wrapper around dplyr's filter().
+
+```{r}
+which_this(iris, "Sepal.Length > 7")
+```
