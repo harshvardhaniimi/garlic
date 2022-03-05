@@ -8,7 +8,8 @@ Description: These are some functions that I use very frequently in my projects.
     categories of functions: exploratory functions to check missing values and describe data,
     visualisation functions for my ggplot2 themes and manipulative functions to modify selected 
     variables. See vignette for more details.
-URL: https://github.com/harshvardhaniimi/garlic
+URL: https://github.com/harshvardhaniimi/garlic,
+    https://harshvardhaniimi.github.io/garlic/
 BugReports: https://github.com/harshvardhaniimi/garlic/issues
 Depends: 
     R (>= 4.0.0)
