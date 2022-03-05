@@ -9,7 +9,7 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 <!-- badges: end -->
 
 
-These are some functions that I use very frequently in my projects. There are three categories of functions: exploratory functions to check missing values and describe data, visualisation functions for my ggplot2 themes and manipulative functions to modify selected variables. See vignette for more details.
+These are some functions that I use very frequently in my projects. There are three categories of functions: exploratory functions to check missing values and describe data, visualisation functions for my ggplot2 themes and manipulative functions to modify selected variables. See vignettes for more details.
 
 ## Installing Package
 
