@@ -28,4 +28,4 @@ library(garlic)
 - [ggplot2 Theme](https://harshvardhaniimi.github.io/garlic/articles/GG-Serif_Theme.html)
 
 ## Citation
-
+Harshvardhan, M. (March 2022). garlic: Some R Functions I Use Rather Frequently. v0.1.0 (r-package). Github, Zenodo. https://doi.org/10.5281/zenodo.6331095
