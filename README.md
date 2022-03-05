@@ -11,3 +11,9 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 
 These are some functions that I use very frequently in my projects. There are three categories of functions: exploratory functions to check missing values and describe data, visualisation functions for my ggplot2 themes and manipulative functions to modify selected variables. See vignette for more details.
 
+## Installing Package
+
+````
+devtools::install_github("harshvardhaniimi/garlic")
+library(garlic)
+````
