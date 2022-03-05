@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Harshvardhan
+    given-names: M
+    orcid: https://orcid.org/0000-0001-8086-544X
+title: "garlic: Some R Functions I Use Rather Frequently"
+version: 0.1.0
+doi: 10.5281/zenodo.6331095
+date-released: 2022-03-05
